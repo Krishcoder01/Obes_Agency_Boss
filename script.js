@@ -38,18 +38,49 @@ tl.to(".line1 h2" , {
 tl.to(loader ,{
     opacity : 0 ,
     duration : 0.4 ,
-    delay : 4.1 ,
+    delay : 4 ,
 })
 
 tl.from(".page1" ,{
     y: 1200 ,
     opacity : 0 ,
-    ease : Power4
+    ease : Power4 ,
+    duration : 0.6 ,
 })
 tl.to(".loader" , {
     display : "none"
 })
+tl.from(".nav" , {
+   opacity : 0 ,
+})
+tl.from("#hero1 h1 , #hero2 h1 , #hero3 h3 , #hero3 h2 , #hero4 h1" , {
+    y: 120 ,
+    stagger : 0.2
+})
 
 }
-
 loader()
+
+
+
+function cursorAnimation(){
+    var crsr = document.querySelector('.crsr');
+
+document.addEventListener('mousemove', function(event){
+    var x = event.clientX;
+    var y = event.clientY;
+    console.log("hello")
+    gsap.to( crsr , {
+        x : x ,
+        y : y ,
+        
+        
+    })
+})
+Shery.makeMagnet(".nav-part2 h4" , {
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+}
+cursorAnimation()
+

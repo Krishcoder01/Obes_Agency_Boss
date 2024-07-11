@@ -15,6 +15,17 @@ html ,body{
     position: relative;
     background-color: #111;
 }
+
+.crsr{
+    width: 2.1vw;
+    height: 2.1vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    z-index: 1000;
+    position: fixed;
+    transform: translate(-50% , -50%);
+}
 .loader{
     height: 100%;
     width: 100%;
@@ -103,3 +114,54 @@ html ,body{
     height: 100vh;
     background-color: #151515;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 10vw;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 2.5vw;
+    justify-content: center;
+    align-items: center;
+}
+.nav-part2 h4{
+    font-size: 1.1vw;
+    font-weight: 100;
+    font-family: "Plain Light";
+    font-weight: 500;
+}
+.hero{
+    height: fit-content;
+    overflow: hidden;
+    width: 72%;
+    margin-left: 27%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.hero h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 8vw;
+}
+.hero:nth-child(2){
+    margin-top: 17vh;
+}
+.hero h2 , .hero h3{
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 8vw;
+}
+
+.hero h2:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    /* font-family: "silk serif"; */
+    /* cursor: pointer; */
+}
+
