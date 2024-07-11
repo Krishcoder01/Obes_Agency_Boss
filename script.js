@@ -1,4 +1,5 @@
-var line1 = document.querySelectorAll('.line1 h1');
+function loader(){
+    var line1 = document.querySelectorAll('.line1 h1');
 var line1p2h5 = document.querySelector('.line1-part1 h5');
 var linep2 = document.querySelector('.line1-part1');
 var loader = document.querySelector('.loader');
@@ -49,10 +50,6 @@ tl.to(".loader" , {
     display : "none"
 })
 
+}
 
-
-
-
-
-
-
+loader()
