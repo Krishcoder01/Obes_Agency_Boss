@@ -27,7 +27,7 @@ tl.from ( ".line1-part1 " ,{
                 line1p2h5.innerHTML =grow 
         
             }
-        },38)
+        },33)
     }
 })
 tl.to(".line1 h2" , {
