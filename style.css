@@ -149,6 +149,7 @@ body{
     font-size: 8vw;
     text-transform: uppercase;
     line-height: 8vw;
+    position: relative;
 }
 .hero:nth-child(2){
     margin-top: 17vh;
@@ -245,6 +246,16 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 5vh;
+    position: relative;
+}
+.page4-content h1:before{
+    content: "03";
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left : -20%;
+    position: absolute;
+    top: 8%;
 }
 .page4-flex{
     display: flex;
@@ -357,4 +368,55 @@ body{
     transform: translateX(calc(-100% - 20px));
 }
 
+.footer{
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    padding-left: 28vw;
+}
+.footer h1{
+    font-size: 8vw;
+    /* background-color: red; */
+    width: fit-content; /* 63vw */
+    font-family: "plain light";
+    position: relative;
+    text-transform: uppercase;
+}
+.footer h1:before{
+    content: "04";
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: silk serif;
+    left : -20%;
+    position: absolute;
+    top: 8%;
+}
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 2vw 0;
+}
+.footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+}
+.footer-div h6{
+    font-size: 0.8vw;
+    padding-bottom: 1.3vw;
+    font-family: "plain light";
 
+}
+.box{
+    width: 27%;
+}
+.footer-div h5{
+    font-size: 1.3vw;
+    margin: 0.2vh 0;
+    font-weight: 500;
+    font-family: "plain light";
+    
+}

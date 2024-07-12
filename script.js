@@ -38,14 +38,14 @@ tl.to(".line1 h2" , {
 tl.to(loader ,{
     opacity : 0 ,
     duration : 0.4 ,
-    delay : 4 ,
+    delay : 3.4 ,
 })
 
 tl.from(".page1" ,{
     y: 1200 ,
     opacity : 0 ,
     ease : Power4 ,
-    duration : 0.6 ,
+    duration : 0.2 ,
 })
 tl.to(".loader" , {
     display : "none"
